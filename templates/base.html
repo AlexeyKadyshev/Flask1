@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Магазин одежды</title>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index.html') }}">Домашняя</a>
+        <a href="{{ url_for('info.html') }}">О нас</a>
+        <a href="{{ url_for('contacts.html') }}">Контакты</a>
+    </nav>
+    <h1>Магазин одежды</h1>
+
+    {% block content %}{% endblock %}
+
+
+    <footer>
+        <div>
+            <p>Совершая у нас покупки, мы гарантируем сохранность ваших персональных данных)))</p>>
+        </div>
+    </footer>
+</body>
+</html>
